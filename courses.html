@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Champion Academy</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav>
+      <div class="logo">Champion Academy</div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+
+    <header class="hero small-hero">
+      <h1>Our Courses</h1>
+
+      <p>
+        Explore English and Computer training programs offered at Champion
+        Academy.
+      </p>
+    </header>
+
+    <!-- Search Section -->
+
+    <section class="container">
+      <input
+        type="text"
+        id="searchCourse"
+        placeholder="Search course by name..."
+        class="search-input"
+      />
+    </section>
+
+    <!-- Filter Buttons -->
+
+    <section class="container">
+      <div class="filter-buttons">
+        <button class="btn filter-btn" data-grade="all">All Courses</button>
+
+        <button class="btn filter-btn" data-grade="Grade 10">Grade 10</button>
+
+        <button class="btn filter-btn" data-grade="Grade 11">Grade 11</button>
+
+        <button class="btn filter-btn" data-grade="Grade 12">Grade 12</button>
+      </div>
+    </section>
+
+    <!-- Courses Container -->
+
+    <section class="container">
+      <h2>Available Courses</h2>
+
+      <div id="coursesContainer" class="courses-grid"></div>
+    </section>
+
+    <!-- Course Details -->
+
+    <section class="container">
+      <h2>Course Details</h2>
+
+      <div id="courseDetails" class="details-box">
+        Select a course to view details.
+      </div>
+    </section>
+
+    <!-- Add Course Form -->
+
+    <section class="container">
+      <h2>Add New Course</h2>
+
+      <form id="addCourseForm">
+        <div class="form-group">
+          <label>Course Name</label>
+
+          <input type="text" id="courseName" placeholder="Enter course name" />
+        </div>
+
+        <div class="form-group">
+          <label>Instructor</label>
+
+          <input
+            type="text"
+            id="courseInstructor"
+            placeholder="Instructor name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Grade Level</label>
+
+          <select id="courseGrade">
+            <option value="">Select Grade</option>
+
+            <option>Grade 10</option>
+
+            <option>Grade 11</option>
+
+            <option>Grade 12</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+
+          <textarea
+            id="courseDescription"
+            rows="4"
+            placeholder="Course description..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Image URL</label>
+
+          <input type="file" id="courseImage" accept="image/*" />
+        </div>
+
+        <button type="submit" class="btn">Add Course</button>
+      </form>
+    </section>
+
+    <!-- Academy Information -->
+
+    <section class="container academy-info">
+      <h2>Why Study at Champion Academy?</h2>
+
+      <p>
+        Champion Academy is an educational center in Kabul specializing in
+        English language and computer skills. Our mission is to help students
+        develop practical knowledge for academic and professional success.
+      </p>
+
+      <ul>
+        <li>Professional English Courses</li>
+        <li>Computer Fundamentals</li>
+        <li>Web Design Training</li>
+        <li>Interactive Learning Environment</li>
+        <li>Experienced Instructors</li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
