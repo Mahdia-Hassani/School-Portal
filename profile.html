@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile | Champion Academy</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav>
+      <div class="logo">Champion Academy</div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Profile Section -->
+
+    <section class="container">
+      <h1>Student Dashboard</h1>
+
+      <div class="profile-card">
+        <img
+          id="profileImage"
+          class="student-photo"
+          src=""
+          alt="Student Photo"
+        />
+
+        <h2 id="profileName">Student Name</h2>
+
+        <p>
+          <strong>Age:</strong>
+          <span id="profileAge"></span>
+        </p>
+
+        <p>
+          <strong>Grade:</strong>
+          <span id="profileGrade"></span>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <span id="profileEmail"></span>
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          <span id="profilePhone"></span>
+        </p>
+        <p>
+          <strong>Status:</strong>
+          <span id="studentStatus"> Active </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+
+    <section class="container">
+      <h2>Contact Information</h2>
+
+      <div id="contactInfo" class="contact-box">
+        Click a button below to view contact information.
+      </div>
+
+      <div class="button-group">
+        <button id="showEmailBtn" class="btn">Show Email</button>
+
+        <button id="showPhoneBtn" class="btn">Show Phone</button>
+
+        <button id="hideContactBtn" class="btn danger">
+          Hide Contact Info
+        </button>
+      </div>
+    </section>
+
+    <!-- Status Update -->
+
+    <section class="container">
+      <h2>Update Student Status</h2>
+
+      <input type="text" id="statusInput" placeholder="Enter new status..." />
+
+      <button id="updateStatusBtn" class="btn">Update Status</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
